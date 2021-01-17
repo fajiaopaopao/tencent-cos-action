@@ -27,7 +27,7 @@ if [ -z "$INPUT_REGION" ]; then
   exit 1
 fi
 
-coscmd config -a $INPUT_SECRET_ID -s $INPUT_SECRET_KEY -b $INPUT_BUCKET -r $INPUT_REGION -m 30
+coscmd config -a $INPUT_SECRET_ID -s $INPUT_SECRET_KEY -b $INPUT_BUCKET -r $INPUT_REGION -m 30 -e cos.accelerate.myqcloud.com
 
 IFS="&&"
 arrARGS=($INPUT_ARGS)
